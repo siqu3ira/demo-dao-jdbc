@@ -33,5 +33,13 @@ public class Program {
         for (var sel : listaTodosSellers) {
             System.out.println(sel);
         }
+
+        System.out.println("\n====== Test 4: seller findAll =======");
+        var newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, dep);
+        sellerDao.insert(newSeller);
+
+        System.out.println("Inserted! New id = " + newSeller.getId());
+
+
     }
 }
